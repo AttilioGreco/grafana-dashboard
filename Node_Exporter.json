@@ -14,7 +14,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "5.2.4"
+      "version": "5.3.2"
     },
     {
       "type": "panel",
@@ -53,7 +53,7 @@
   "gnetId": 5174,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1540829941055,
+  "iteration": 1541168509797,
   "links": [],
   "panels": [
     {
@@ -20440,9 +20440,10 @@
         "multi": false,
         "name": "node",
         "options": [],
-        "query": "label_values(node_boot_time_seconds{job=\"node_exporter\"}, instance)",
+        "query": "label_values(node_boot_time_seconds{job=\"node\"}, instance)",
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -20463,6 +20464,7 @@
         "query": "label_values(node_boot_time_seconds, instance)",
         "refresh": 1,
         "regex": "/[^:]+:(.*)/",
+        "skipUrlSync": false,
         "sort": 0,
         "tagValuesQuery": "",
         "tags": [],
@@ -20504,5 +20506,5 @@
   "timezone": "browser",
   "title": "Node Exporter Full 0.16",
   "uid": "7koA7j0mz",
-  "version": 3
+  "version": 4
 }
